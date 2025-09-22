@@ -1,151 +1,97 @@
-Projeto: Dashboard de Combate à Violência contra a Mulher
-Dashboard para analisar o objetivo 5 de desenvolvimento sustentável no Brasil - Igualdade de Gênero com foco em violência contra a mulher.
+# Projeto: Sistema de Agendamento para Salões de Beleza - "AgendaBeauty"
 
-I. Objetivo
-O objetivo deste projeto é criar um dashboard interativo para monitorar, analisar e visualizar dados sobre a violência contra a mulher no Brasil. A solução busca consolidar informações de fontes diversas e torná-las acessíveis de forma clara e visual. Isso permitirá que pesquisadores, estudantes, ativistas, jornalistas e formuladores de políticas públicas tenham uma ferramenta poderosa para entender as tendências, identificar padrões e, assim, apoiar a elaboração de estratégias mais eficazes de combate a esse problema social.
+## I. Objetivo
 
-A aplicação aborda diretamente o Objetivo de Desenvolvimento Sustentável (ODS) 5 - Igualdade de Gênero, com foco na meta 5.2, que visa eliminar todas as formas de violência contra mulheres e meninas.
+O objetivo principal deste projeto é desenvolver uma plataforma web, chamada **AgendaBeauty**, para modernizar e automatizar o processo de agendamento de horários em salões de beleza, barbearias e para profissionais autônomos da área da estética. A solução visa oferecer uma experiência fluida e conveniente para os **clientes**, ao mesmo tempo que otimiza a gestão da agenda e dos serviços para os **profissionais** e **gestores** dos estabelecimentos.
 
-II. Problema
-Apesar da gravidade da violência contra a mulher no Brasil, os dados sobre o tema muitas vezes estão dispersos em relatórios, sites governamentais e bases de dados complexas, dificultando a análise integrada. Essa falta de uma plataforma centralizada e visualmente clara impede que a sociedade e os órgãos competentes compreendam a dimensão do problema, como sua distribuição geográfica e a evolução ao longo do tempo.
+## II. Problema
 
-O problema principal, portanto, é a dispersão e a inacessibilidade dos dados, o que prejudica a conscientização, a pesquisa e a tomada de decisões baseadas em evidências para combater a violência de gênero de forma eficaz.
+Atualmente, muitos salões de beleza e profissionais autônomos ainda dependem de métodos manuais e pouco eficientes para gerenciar seus agendamentos, como agendas de papel, ligações telefônicas ou trocas de mensagens em aplicativos como o WhatsApp. Essa abordagem gera uma série de problemas:
 
-Perfeito. Aqui está a documentação completa em formato Markdown, seguindo o roteiro que definimos. Você pode copiar este texto diretamente para o README.md do seu repositório no GitHub.
+* **Para os Profissionais/Salões:**
+    * Alto risco de erros humanos, como agendamentos duplos ou horários esquecidos.
+    * Dificuldade em gerenciar cancelamentos e remarcações de forma ágil.
+    * Falta de um canal centralizado para divulgar serviços, preços e horários disponíveis.
+    * Gasto de tempo considerável em tarefas administrativas em vez de focar no atendimento ao cliente.
 
-Projeto: Dashboard de Combate à Violência contra a Mulher Repositório do Projeto Link do Repositório: [Inserir o Link do seu Repositório aqui]
+* **Para os Clientes:**
+    * Falta de visibilidade clara sobre os horários disponíveis, exigindo contato direto.
+    * Demora na confirmação do agendamento, dependendo da disponibilidade do profissional para responder.
+    * Dificuldade para agendar serviços fora do horário comercial do estabelecimento.
 
-Link do GitHub Project: [Inserir o Link do seu GitHub Project aqui]
+A plataforma **AgendaBeauty** busca resolver essa ineficiência, centralizando a gestão da agenda e simplificando o processo de agendamento para ambas as partes.
 
-I. Objetivo O objetivo deste projeto é criar um dashboard interativo para monitorar, analisar e visualizar dados sobre a violência contra a mulher no Brasil. A solução busca consolidar informações de fontes diversas e torná-las acessíveis de forma clara e visual. Isso permitirá que pesquisadores, estudantes, ativistas, jornalistas e formuladores de políticas públicas tenham uma ferramenta poderosa para entender as tendências, identificar padrões e, assim, apoiar a elaboração de estratégias mais eficazes de combate a esse problema social.
+## III. Tipo de Solução
 
-A aplicação aborda diretamente o Objetivo de Desenvolvimento Sustentável (ODS) 5 - Igualdade de Gênero, com foco na meta 5.2, que visa eliminar todas as formas de violência contra mulheres e meninas.
+A solução proposta é uma **aplicação web responsiva**, composta por um frontend e um backend, que funcionará como uma plataforma de serviços (SaaS - *Software as a Service*).
 
-II. Problema Apesar da gravidade da violência contra a mulher no Brasil, os dados sobre o tema muitas vezes estão dispersos em relatórios, sites governamentais e bases de dados complexas, dificultando a análise integrada. Essa falta de uma plataforma centralizada e visualmente clara impede que a sociedade e os órgãos competentes compreendam a dimensão do problema, como sua distribuição geográfica e a evolução ao longo do tempo.
+* **Frontend:** Será a interface com o usuário, desenvolvida para ser intuitiva e de fácil utilização tanto em desktops quanto em dispositivos móveis (smartphones e tablets). Responsável por exibir os serviços, a agenda, os formulários de agendamento e os painéis de gerenciamento.
+* **Backend:** Será o cérebro da aplicação, responsável por toda a lógica de negócio, incluindo o cadastro de usuários (clientes e profissionais), gerenciamento de serviços, controle de horários, notificações e a segurança dos dados. Ele fornecerá uma API para se comunicar com o frontend.
 
-O problema principal, portanto, é a dispersão e a inacessibilidade dos dados, o que prejudica a conscientização, a pesquisa e a tomada de decisões baseadas em evidências para combater a violência de gênero de forma eficaz.
+Este modelo de solução foi escolhido por ser acessível de qualquer lugar, não exigir instalação por parte do usuário e permitir a centralização completa das informações, facilitando a gestão e o acesso em tempo real.
 
-III. Tipo de Solução
-A solução proposta é um dashboard de dados, uma aplicação web que combina um backend e um frontend.
+## IV. Requisitos
 
-Frontend: Será a interface do usuário, responsável por exibir os gráficos, mapas e métricas de forma interativa.
+### Requisitos Funcionais (RFs)
 
-Backend: Será o "motor" da aplicação, responsável por coletar, processar e servir os dados para o frontend através de uma API.
+**Módulo de Gestão de Contas**
+* **RF01:** O sistema deve permitir que Clientes e Profissionais se cadastrem na plataforma fornecendo nome, e-mail e senha.
+* **RF02:** O sistema deve permitir que usuários cadastrados realizem login.
 
-A escolha de um dashboard é a mais adequada porque a solução lida com um grande volume de dados estatísticos. O formato visual do dashboard é ideal para:
+**Módulo do Cliente**
+* **RF03:** O sistema deve permitir que o Cliente visualize a lista de profissionais/salões cadastrados.
+* **RF04:** O sistema deve permitir que o Cliente visualize os serviços e preços oferecidos por um profissional.
+* **RF05:** O sistema deve exibir a agenda de um profissional com os horários disponíveis e ocupados.
+* **RF06:** O sistema deve permitir que o Cliente selecione um serviço e um horário disponível para realizar um agendamento.
+* **RF07:** O sistema deve permitir que o Cliente visualize seus próprios agendamentos (futuros e passados).
+* **RF08:** O sistema deve permitir que o Cliente cancele um agendamento com antecedência mínima definida pelo profissional.
 
-Síntese de Dados: Transformar informações complexas em gráficos e mapas de fácil compreensão.
+**Módulo do Profissional**
+* **RF09:** O sistema deve permitir que o Profissional cadastre e gerencie os serviços que oferece (nome, descrição, duração e preço).
+* **RF10:** O sistema deve permitir que o Profissional defina sua jornada de trabalho (dias da semana e horários de atendimento).
+* **RF11:** O sistema deve permitir que o Profissional visualize sua agenda diária, semanal e mensal.
+* **RF12:** O sistema deve permitir que o Profissional confirme ou cancele agendamentos feitos por clientes.
+* **RF13:** O sistema deve permitir que o Profissional bloqueie horários em sua agenda para uso pessoal.
 
-Análise Rápida: Permitir que o usuário identifique rapidamente tendências, picos de violência e áreas de maior incidência.
+### Requisitos Não Funcionais (RNFs)
 
-Comunicação Efetiva: Facilitar a comunicação do problema para um público amplo, que pode não ter familiaridade com a análise de dados brutos.
+* **RNF01 (Usabilidade):** A interface deve ser intuitiva e de fácil navegação, exigindo o mínimo de cliques para realizar as ações principais.
+* **RNF02 (Desempenho):** As páginas e, principalmente, a agenda, devem carregar em no máximo 3 segundos.
+* **RNF03 (Responsividade):** A aplicação deve se adaptar e ser plenamente funcional em diferentes tamanhos de tela (desktop, tablet e smartphone).
+* **RNF04 (Segurança):** Os dados dos usuários, especialmente as senhas, devem ser armazenados de forma criptografada. A comunicação deve utilizar HTTPS.
+* **RNF05 (Disponibilidade):** O sistema deve estar disponível para acesso 24/7, com um tempo de atividade (uptime) de pelo menos 99%.
 
-IV. Requisitos
-Requisitos Funcionais (RFs)
+## V. Diagrama de Caso de Uso
 
-RF01: Dashboard de Incidência
+O diagrama abaixo ilustra as principais interações dos atores com o sistema **AgendaBeauty**.
 
-O sistema deve exibir um mapa interativo do Brasil que mostre a incidência de violência contra a mulher por estado ou cidade, usando um mapa de calor.
+**Atores:**
+* **Cliente:** Pessoa que busca e agenda serviços de beleza.
+* **Profissional:** Pessoa que oferece os serviços e gerencia sua própria agenda.
 
-RF02: Gráficos de Tipologia
+```mermaid
+graph TD
+    subgraph Sistema AgendaBeauty
+        direction LR
 
-O sistema deve apresentar gráficos de barras e de pizza para detalhar os tipos de violência mais comuns (física, psicológica, sexual, etc.).
+        Cliente[Cliente]
+        Profissional[Profissional]
 
-RF03: Análise de Tendência
+        uc_agendar[Realizar Agendamento]
+        uc_visualizar_agenda_cliente[Visualizar Meus Agendamentos]
+        uc_cancelar[Cancelar Agendamento]
 
-O sistema deve incluir um gráfico de linhas para mostrar a evolução dos casos de violência ao longo dos anos.
+        uc_gerenciar_servicos[Gerenciar Serviços]
+        uc_gerenciar_agenda_prof[Gerenciar Agenda]
+        uc_definir_horarios[Definir Jornada de Trabalho]
 
-RF04: Filtros de Dados
+        Cliente --> uc_agendar
+        Cliente --> uc_visualizar_agenda_cliente
+        Cliente --> uc_cancelar
 
-O sistema deve permitir que o usuário filtre os dados por tipo de violência, faixa etária da vítima, tipo de agressor e ano.
+        uc_agendar -->|include| uc_visualizar_agenda_cliente
 
-RF05: Métricas Chave
-
-O sistema deve exibir cartões com métricas de destaque, como o total de casos registrados no último ano e a porcentagem de crescimento em relação ao ano anterior.
-
-Perfeito. Aqui está a documentação completa em formato Markdown, seguindo o roteiro que definimos. Você pode copiar este texto diretamente para o README.md do seu repositório no GitHub.
-
-Projeto: Dashboard de Combate à Violência contra a Mulher Repositório do Projeto Link do Repositório: [Inserir o Link do seu Repositório aqui]
-
-Link do GitHub Project: [Inserir o Link do seu GitHub Project aqui]
-
-I. Objetivo O objetivo deste projeto é criar um dashboard interativo para monitorar, analisar e visualizar dados sobre a violência contra a mulher no Brasil. A solução busca consolidar informações de fontes diversas e torná-las acessíveis de forma clara e visual. Isso permitirá que pesquisadores, estudantes, ativistas, jornalistas e formuladores de políticas públicas tenham uma ferramenta poderosa para entender as tendências, identificar padrões e, assim, apoiar a elaboração de estratégias mais eficazes de combate a esse problema social.
-
-A aplicação aborda diretamente o Objetivo de Desenvolvimento Sustentável (ODS) 5 - Igualdade de Gênero, com foco na meta 5.2, que visa eliminar todas as formas de violência contra mulheres e meninas.
-
-II. Problema Apesar da gravidade da violência contra a mulher no Brasil, os dados sobre o tema muitas vezes estão dispersos em relatórios, sites governamentais e bases de dados complexas, dificultando a análise integrada. Essa falta de uma plataforma centralizada e visualmente clara impede que a sociedade e os órgãos competentes compreendam a dimensão do problema, como sua distribuição geográfica e a evolução ao longo do tempo.
-
-O problema principal, portanto, é a dispersão e a inacessibilidade dos dados, o que prejudica a conscientização, a pesquisa e a tomada de decisões baseadas em evidências para combater a violência de gênero de forma eficaz.
-
-III. Tipo de Solução A solução proposta é um dashboard de dados, uma aplicação web que combina um backend e um frontend.
-
-Frontend: Será a interface do usuário, responsável por exibir os gráficos, mapas e métricas de forma interativa.
-
-Backend: Será o "motor" da aplicação, responsável por coletar, processar e servir os dados para o frontend através de uma API.
-
-A escolha de um dashboard é a mais adequada porque a solução lida com um grande volume de dados estatísticos. O formato visual do dashboard é ideal para:
-
-Síntese de Dados: Transformar informações complexas em gráficos e mapas de fácil compreensão.
-
-Análise Rápida: Permitir que o usuário identifique rapidamente tendências, picos de violência e áreas de maior incidência.
-
-Comunicação Efetiva: Facilitar a comunicação do problema para um público amplo, que pode não ter familiaridade com a análise de dados brutos.
-
-IV. Requisitos Requisitos Funcionais (RFs) RF01: Dashboard de Incidência
-
-O sistema deve exibir um mapa interativo do Brasil que mostre a incidência de violência contra a mulher por estado ou cidade, usando um mapa de calor.
-
-RF02: Gráficos de Tipologia
-
-O sistema deve apresentar gráficos de barras e de pizza para detalhar os tipos de violência mais comuns (física, psicológica, sexual, etc.).
-
-RF03: Análise de Tendência
-
-O sistema deve incluir um gráfico de linhas para mostrar a evolução dos casos de violência ao longo dos anos.
-
-RF04: Filtros de Dados
-
-O sistema deve permitir que o usuário filtre os dados por tipo de violência, faixa etária da vítima, tipo de agressor e ano.
-
-RF05: Métricas Chave
-
-O sistema deve exibir cartões com métricas de destaque, como o total de casos registrados no último ano e a porcentagem de crescimento em relação ao ano anterior.
-
-RF06: Funcionalidade de Exportação
-
-O sistema deve permitir a exportação dos gráficos e dos dados em formatos como PNG ou CSV.
-
-Requisitos Não Funcionais (RNFs):
-
-Usabilidade: A interface do dashboard deve ser intuitiva, limpa e de fácil navegação para usuários de todos os níveis de conhecimento técnico.
-
-Desempenho: Os gráficos e os dados devem carregar rapidamente, com tempo de resposta máximo de 5 segundos.
-
-Segurança: A API do backend deve ser segura para proteger a integridade dos dados e impedir acessos não autorizados.
-
-Confiabilidade: Os dados exibidos no dashboard devem ser precisos e obtidos de fontes oficiais e confiáveis (ex: DataSUS, IPEA).
-
-Acessibilidade: A aplicação deve ser acessível para pessoas com deficiência visual, utilizando descrições de imagens e contrastes adequados.
-
-V. Diagrama de Caso de Uso
-O diagrama de caso de uso a seguir ilustra as principais interações dos atores com o sistema.
-
-Diagrama de Caso de Uso
-
-Atores:
-
-Usuário: Qualquer pessoa que acessa o dashboard para visualizar dados.
-
-Administrador: Pessoa responsável por carregar e atualizar os dados no sistema.
-
-Casos de Uso:
-
-Visualizar Gráficos de Incidência: O usuário acessa e interage com os gráficos e mapas.
-
-Filtrar Dados: O usuário ajusta a visualização dos dados com base em critérios como período ou tipo de violência.
-
-Exportar Relatórios: O usuário salva os gráficos e dados para uso externo.
-
-Acessar Métricas Chave: O usuário consulta os números de destaque do dashboard.
-
-Gerenciar Dados: O administrador insere ou atualiza os dados da base de dados do backend.
+        Profissional --> uc_gerenciar_servicos
+        Profissional --> uc_gerenciar_agenda_prof
+        Profissional --> uc_definir_horarios
+    end
