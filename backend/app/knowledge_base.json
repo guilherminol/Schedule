@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "keywords": ["febre", "o que é febre", "temperatura alta"],
+    "answer": "Febre é o aumento da temperatura corporal acima de 37.8°C, geralmente um sinal de que seu corpo está combatendo uma infecção. Se persistir por mais de 3 dias, procure atendimento médico."
+  },
+  {
+    "id": 2,
+    "keywords": ["gripe", "sintomas gripe", "resfriado"],
+    "answer": "Os sintomas comuns da gripe incluem febre alta, dores no corpo, fadiga, dor de cabeça, tosse e dor de garganta. Recomenda-se repouso, hidratação e, em alguns casos, antitérmicos sob orientação médica."
+  },
+  {
+    "id": 3,
+    "keywords": ["dor de cabeça", "enxaqueca", "cefaleia"],
+    "answer": "Dor de cabeça (cefaleia) pode ter várias causas, desde tensão até condições mais sérias. Se a dor for intensa, frequente ou acompanhada de outros sintomas, procure um médico para avaliação adequada."
+  },
+  {
+    "id": 4,
+    "keywords": ["covid", "coronavirus", "sintomas covid", "covid-19"],
+    "answer": "Os principais sintomas da COVID-19 incluem febre, tosse seca, cansaço, perda de paladar ou olfato e dificuldade para respirar. Se apresentar sintomas, faça o teste e mantenha isolamento conforme orientações médicas."
+  },
+  {
+    "id": 5,
+    "keywords": ["oi", "olá", "bom dia", "boa tarde", "boa noite"],
+    "answer": "Olá! Sou o SaúdeConecta, um assistente virtual para informações básicas de saúde. IMPORTANTE: Minhas respostas são apenas informativas e não substituem uma consulta médica. Como posso ajudar você hoje?"
+  }
+]
