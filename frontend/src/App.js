@@ -36,7 +36,7 @@ function App() {
       const data = await response.json();
 
       // Adiciona a resposta do bot ao histórico
-      setChatHistory(prev => [...prev, { sender: 'bot', text: data.response }]);
+      setChatHistory(prev => [...prev, { sender: 'bot', text: data.answer }]);
     } catch (error) {
       console.error('Erro ao enviar mensagem:', error);
       setChatHistory(prev => [...prev, {
